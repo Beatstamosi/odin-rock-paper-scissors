@@ -17,7 +17,7 @@
         </div>
         <div class="container-how-many-rounds">
             <h2>How many rounds would you like to play?</h2>
-            <input type="text" autofocus>
+            <input id="input-rounds" type="text" autofocus>
             <button id="play-game">Start Game</button>
         </div>
         
@@ -27,26 +27,30 @@
         <h2 class="round-info">Round I</h2>
         <h2 class="heading-choice">Choose your Weapon</h2>
         <div class="container-rps-icons">
-            <img class="rps-icon-game" src="static/img/rock.png" alt="Hand doing rock">
-            <img class="rps-icon-game" src="static/img/paper.png" alt="Hand doing paper">
-            <img class="rps-icon-game" src="static/img/scissor.png" alt="Hand doing scissors">
+            <img class="rps-icon-game" id="rock" src="static/img/rock.png" alt="Hand doing rock">
+            <img class="rps-icon-game" id="paper" src="static/img/paper.png" alt="Hand doing paper">
+            <img class="rps-icon-game" id="scissors" src="static/img/scissor.png" alt="Hand doing scissors">
+        </div>
+
+        <div class="container-round-result">
+            <div id="round-result-info"></div>
         </div>
 
         <div class="container-scores">
             <div class="player-score">
-                <div class="number-circle">0</div>
+                <div id="human-score" class="number-circle">0</div>
                 <h2>Your Score</h2>
             </div>
             <div class="computer-score">
-                <div class="number-circle">0</div>
+                <div id="computer-score" class="number-circle">0</div>
                 <h2>Computer Score</h2>
             </div>
         </div>
     </div>
 
     <div class="game-over">
-        <h1>You won!</h1>
-        <p>5 to 1</p>
+        <h1 id="winner"></h1>
+        <p id="final-score"></p>
         <button id="play-again">Play again</button>
     </div>
 

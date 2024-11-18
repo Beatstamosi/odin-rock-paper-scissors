@@ -61,7 +61,7 @@
 
 .container-game {
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -116,7 +116,7 @@
 
   .game-over {
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -129,4 +129,9 @@
 
   .game-over p {
     font-size: 40px;
+  }
+
+  #round-result-info {
+    font-size: 30px;
+    margin-top: 50px;
   }
