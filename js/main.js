@@ -100,7 +100,6 @@ function announceWinner() {
 function getRoundWinner(humanChoice, computerChoice) {
 
     let roundResultInfo = document.querySelector("#round-result-info");
-    let winner;
 
     // Draw
     if (humanChoice === computerChoice) {
